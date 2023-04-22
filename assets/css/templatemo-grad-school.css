@@ -649,6 +649,37 @@ section.coming-soon .continer h4 {
     line-height: 40px;
     margin-bottom: 50px;
 }
+section.coming-soon .continer h5 {
+  margin-top: 100px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+}
+section.coming-soon .continer h5 em{
+  color: #00b500;
+  font-style: normal;
+}
+section.coming-soon .continer p {
+  margin-top: 50px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+section.coming-soon .continer p em{
+
+}
+section.coming-soon .continer hr{
+  background-color: #00b500;
+  height: 1px;
+  margin-top: 20px;
+  width: 20%;
+  margin-left: 0;
+}
 section.coming-soon .continer h4 em {
     font-style: normal;
     color: #f5a425;
@@ -662,20 +693,6 @@ section.coming-soon .continer h4 em {
 
 }
 
-section.coming-soon .continer .counter .days,
-section.coming-soon .continer .counter .hours,
-section.coming-soon .continer .counter .minutes,
-section.coming-soon .continer .counter .seconds {
-  width: 22%;
-  height: 140px;
-  float: left;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: #fff;
-  background-color: rgba(250,250,250,0.1);
-}
 @media screen and (max-width: 992px) {
 
   section.coming-soon .continer .counter .days,
@@ -786,7 +803,7 @@ section.coming-soon form input::placeholder { color: #fff; }
 
 section.coming-soon form button {
     margin-top: 10px;
-    background-color: #f5a425;
+    background-color: #00b500;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -797,6 +814,93 @@ section.coming-soon form button {
     outline: none;
     box-shadow: none;
     border: none;
+}
+
+/* Jak Dzialamy */
+
+section.jak_dzialamy {
+  background-image: url(../images/Jak\ dzialamy_Klaudia6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #172238;
+  padding-bottom: 100px;
+  padding: 0px 30px 100px 30px;
+}
+
+section.jak_dzialamy .container hr{
+  background-color: #00b500;
+  height: 1px;
+  margin-top: 20px;
+  width: 40%;
+  margin-left: 0;
+}
+
+section.jak_dzialamy h3{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+section.jak_dzialamy .jak_dzialamy_opis{
+  padding: 50px 0px 0px 30px;
+}
+
+section.jak_dzialamy .jak_dzialamy_opis p{
+  color: #fff;
+}
+
+section.jak_dzialamy ul {
+  margin-left: 15px;
+}
+
+section.jak_dzialamy ul li {
+  list-style-type: disc;
+  padding-bottom: 10px;
+  
+}
+
+
+/* Jak Dzialamy2 */
+
+section.jak_dzialamy2 {
+  background-image: url(../images/Jak\ dzialamy_Klaudia6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #172238;
+  padding-bottom: 100px;
+  padding: 0px 30px 100px 30px;
+}
+
+section.jak_dzialamy2 .container hr{
+  background-color: #00b500;
+  height: 1px;
+  margin-top: 20px;
+  width: 40%;
+  margin-left: 0;
+}
+
+section.jak_dzialamy2 h3{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+section.jak_dzialamy2 .jak_dzialamy_opis{
+  padding: 50px 0px 0px 30px;
+}
+
+section.jak_dzialamy2 .jak_dzialamy_opis p{
+  color: #fff;
+}
+
+section.jak_dzialamy2 ul {
+  margin-left: 15px;
+}
+
+section.jak_dzialamy2 ul li {
+  list-style-type: disc;
+  padding-bottom: 10px;
+  
 }
 
 
