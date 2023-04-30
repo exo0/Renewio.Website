@@ -1,12 +1,3 @@
-/*
-    
-TemplateMo 557 Grad School
-
-https://templatemo.com/tm-557-grad-school
-
-*/
-
-
 @import url(fontawesome.css);
 @import url("<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">");
 body {
@@ -818,7 +809,7 @@ section.coming-soon form button {
 
 /* Jak Dzialamy */
 
-section.jak_dzialamy {
+section.jakdzialamy {
   background-image: url(../images/Jak\ dzialamy_Klaudia6.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -827,7 +818,7 @@ section.jak_dzialamy {
   padding: 0px 30px 100px 30px;
 }
 
-section.jak_dzialamy .container hr{
+section.jakdzialamy hr{
   background-color: #00b500;
   height: 1px;
   margin-top: 20px;
@@ -835,32 +826,32 @@ section.jak_dzialamy .container hr{
   margin-left: 0;
 }
 
-section.jak_dzialamy h3{
+section.jakdzialamy h3{
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
 }
 
-section.jak_dzialamy .jak_dzialamy_opis{
+section.jakdzialamy .jak_dzialamy_opis{
   padding: 50px 0px 0px 30px;
 }
 
-section.jak_dzialamy .jak_dzialamy_opis p{
+section.jakdzialamy .jak_dzialamy_opis p{
   color: #fff;
 }
 
-section.jak_dzialamy ul {
+section.jakdzialamy ul {
   margin-left: 15px;
 }
 
-section.jak_dzialamy ul li {
+section.jakdzialamy ul li {
   list-style-type: disc;
   padding-bottom: 10px;
   
 }
 
 
-/* Jak Dzialamy2 */
+/* Jak Dzialamy2
 
 section.jak_dzialamy2 {
   background-image: url(../images/Jak\ dzialamy_Klaudia6.png);
@@ -901,7 +892,7 @@ section.jak_dzialamy2 ul li {
   list-style-type: disc;
   padding-bottom: 10px;
   
-}
+} */
 
 
 
@@ -1603,6 +1594,7 @@ footer ul li {
 
 footer .list-unstyled{
   padding: 10px 0px;
+
 }
 
 
@@ -1671,6 +1663,33 @@ section.FAQ .question{
 					  
 				   
  
+
+
+
+/* FAQ */
+
+
+
+section.FAQ {
+  /* background-image: url(../images/Jak\ dzialamy_Klaudia6.png); */
+  background-color: #172238;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+section.FAQ h2{
+  color: #fff;
+}
+
+section.FAQ p{
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+section.FAQ .question{
+  margin-top: 20px;
+}
 
 
 @media screen and (max-width: 992px) {
