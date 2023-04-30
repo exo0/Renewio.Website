@@ -16,12 +16,12 @@ body {
 /* Basic */
 
 a {
-	color: #3CF;
+	color: rgb(182, 184, 185);
     text-decoration: none;
 }
 
 a:hover {
-	color: #FC3;
+	color: #fff;
     text-decoration: none;
 }
 
@@ -1034,6 +1034,7 @@ section.products {
   background:#007bff;
 }
 
+
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
@@ -1553,7 +1554,7 @@ section.contact form textarea::placeholder { color: #fff; }
 section.contact form textarea::placeholder { color: #fff; }
 
 section.contact form button {
-    background-color: #f5a425;
+    background-color: #00b500;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -1585,8 +1586,92 @@ footer p {
 
 footer p a,
 footer p a:hover {
-    color: #f5a425;
+    color: #00b500;
 }
+
+footer h5{
+  color: #fff;
+  padding: 10px 0px;
+  font-size: 13px;
+}
+
+footer ul li {
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-size: 9px;
+}
+
+footer .list-unstyled{
+  padding: 10px 0px;
+}
+
+
+/* FAQ */
+
+
+
+section.FAQ {
+  /* background-image: url(../images/Jak\ dzialamy_Klaudia6.png); */
+  background-color: #172238;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+section.FAQ h2{
+  color: #fff;
+}
+
+section.FAQ p{
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+section.FAQ .question{
+  margin-top: 20px;
+}
+		  
+			  
+					
+				  
+ 
+
+			  
+			  
+						
+				 
+ 
+
+					  
+					
+ 
+
+
+		 
+
+
+
+			 
+																	
+							
+						 
+				
+					 
+ 
+
+			   
+			  
+ 
+
+			  
+			  
+					 
+ 
+
+					  
+				   
+ 
+
 
 @media screen and (max-width: 992px) {
   .features { background-color: #0c1228; }
