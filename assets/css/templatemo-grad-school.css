@@ -702,6 +702,11 @@ section.coming-soon .continer h4 em {
     font-size: 26px;
   }
 
+  .g-recaptcha {
+    transform:scale(0.77);
+    transform-origin:0 0;
+}
+
   section.coming-soon .continer .counter .days .value,
   section.coming-soon .continer .counter .hours .value,
   section.coming-soon .continer .counter .minutes .value,
@@ -1459,6 +1464,11 @@ img.mfp-img {
     text-align: center;
     padding: 0;
   }
+
+  .g-recaptcha {
+    transform:scale(0.77);
+    transform-origin:0 0;
+}
 }
 @media all and (max-width: 900px) {
   .mfp-arrow {
@@ -1506,6 +1516,10 @@ section.contact form {
   section.contact form {
       margin-bottom: 30px;
   }
+  .g-recaptcha {
+    transform:scale(0.77);
+    transform-origin:0 0;
+}
 }
 
 section.contact form input {

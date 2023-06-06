@@ -10,6 +10,89 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <title>Renewio</title>
+    <script type="text/javascript">
+      var CaptchaCallback = function() {
+          grecaptcha.render('RecaptchaField1', {'sitekey' : '6Lc7lG8mAAAAAJRPXQO99vk3Kp1VX15Njn6tPTi5'});
+          grecaptcha.render('RecaptchaField2', {'sitekey' : '6Lc7lG8mAAAAAJRPXQO99vk3Kp1VX15Njn6tPTi5'});
+      };
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PJPFEFQ78"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8PJPFEFQ78');
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('O1ZnJudmjPTEEzWzB');
+        })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('partnerContact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              let captchaValue = grecaptcha.getResponse();
+              console.log(captchaValue);
+              console.log(this);
+              let name = document.getElementById("name").value;
+              let email= document.getElementById("email").value;
+              let phonenumber= document.getElementById("phonenumber").value;
+              var array = {
+                name: name,
+                email: email,
+                phoneNumber: phonenumber,
+                "g-recaptcha-response": captchaValue
+              };
+
+              console.log('Dane przed wysylka');
+              console.log(array);
+              emailjs.send('renewio_partner_contact','Renewio_PartnerTemplate',array)
+                  .then(function() {
+                          console.log('SUCCESS!');
+                          alert('Dziękujemy za kontakt');
+                      }, function(error) {
+                          console.log('FAILED...', error);
+                          alert('Wysłanie wiadmości nie udało się. Skontakuj się bezpośrednio na renewio.contact@gmail.com');
+                      });
+          });
+      }
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('userContact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              let captchaValue = grecaptcha.getResponse();
+              console.log(captchaValue);
+              console.log(this);
+              let name = document.getElementById("userName").value;
+              let email= document.getElementById("userEmail").value;
+              let phonenumber= document.getElementById("message").value;
+              var array = {
+                name: name,
+                email: email,
+                phoneNumber: phonenumber,
+                "g-recaptcha-response": captchaValue
+              };
+
+              console.log('Dane przed wysylka');
+              console.log(array);
+              emailjs.send('renewio_partner_contact','Renewio_PartnerTemplate',array)
+                  .then(function() {
+                          console.log('SUCCESS!');
+                          alert('Dziękujemy za kontakt');
+                      }, function(error) {
+                          console.log('FAILED...', error);
+                          alert('Wysłanie wiadmości nie udało się. Skontakuj się bezpośrednio na renewio.contact@gmail.com');
+                      });
+          });
+      }
+    </script>
 	<link rel="icon" type="image/x-icon" href="assets/images/renewio.ico">																	  
     
     <!-- Bootstrap core CSS -->
@@ -112,7 +195,7 @@ https://templatemo.com/tm-557-grad-school
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-12 mb-4">
-          <h3>Jak działamy?</h5>
+          <h3>Jak działamy?</h3>
           <hr>
           <ul>
             <li style="color: white;">Zapoznaj się z ofertą</li>
@@ -134,38 +217,6 @@ https://templatemo.com/tm-557-grad-school
       </div>
     </div>
   </section>
-
-  <!-- <section class="section jak_dzialamy2" data-section="section2">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h3 class="jak_dzialamy_header">Jak działamy?</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-12 mb-4">
-          <h3>Jak działamy?</h5>
-          <hr>
-          <ul>
-            <li style="color: white;">Zapoznaj się z ofertą</li>
-            <li style="color: white;">Napisz do nas</li>
-            <li style="color: white;">Wstępna analiza</li>
-            <li style="color: white;">Umów się na instalację</li>
-            <li style="color: white;">Poznaj potencjał Twojej lokalizacji</li>
-          </ul>
-        </div>
-        <div class="col-lg-8 col-md-12 mb-4">
-          <div class="jak_dzialamy_opis">
-          <p>Nasza firma oferuje trzy pakiety, które odpowiadają różnym potrzebom klientów zainteresowanych instalacją odnawialnych źródeł energii.</p>
-          <p>Skontaktuj się z nami, aby omówić swoje potrzeby i uzyskać więcej informacji na temat naszych pakietów.</p>
-          <p> Po otrzymaniu Twojego zgłoszenia przeprowadzimy wstępną analizę Twojego domu lub firmy, aby określić najlepsze źródła energii odnawialnej do zastosowania oraz oszacować koszty i korzyści wynikające z instalacji.</p>
-          <p>Po zatwierdzeniu naszej oferty i dokonaniu wszelkich formalności, umówimy się na dogodny termin instalacji.</p>
-          <p>Przed przystąpieniem do instalacji dokładnie poznamy potencjał Twojej lokalizacji, aby zaprojektować najlepszą instalację i zagwarantować jej maksymalną wydajność.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <section class="section products" data-section="section3">
     <div class="container">
@@ -264,7 +315,7 @@ https://templatemo.com/tm-557-grad-school
             <div class="top-content">
               <h6>Skontaktuj się z nami by nawiązać współprace!</h6>
             </div>
-            <form id="contact" action="" method="get">
+            <form id="partnerContact-form">
               <div class="row">
                 <div class="col-md-12">
                   <fieldset>
@@ -278,8 +329,11 @@ https://templatemo.com/tm-557-grad-school
                 </div>
                 <div class="col-md-12">
                   <fieldset>
-                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Numer telefonu" required="">
+                    <input name="phone-number" type="text" class="form-control" id="phonenumber" placeholder="Numer telefonu" required="">
                   </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <div id="RecaptchaField1"></div>
                 </div>
                 <div class="col-md-12">
                   <fieldset>
@@ -302,28 +356,26 @@ https://templatemo.com/tm-557-grad-school
             <h2>Skontaktuj się z nami</h2>
           </div>
         </div>
-        <div class="col-md-12">
-        
-        <!-- Do you need a working HTML contact-form script?
-                	
-                    Please visit https://templatemo.com/contact page -->
-                          
-          <form id="contact" action="gmail.phps" method="post">
+        <div class="col-md-12">             
+          <form id="userContact-form" >
             <div class="row">
               <div class="col-md-6">
                   <fieldset>
-                    <input name="name" type="text" class="form-control" name="name" id="name" placeholder="Imię i nazwisko" required="true">
+                    <input name="name" type="text" class="form-control" name="name" id="userName" placeholder="Imię i nazwisko" required="true">
                   </fieldset>
                 </div>
                 <div class="col-md-6">
                   <fieldset>
-                    <input name="email" type="text" class="form-control" name="email" id="email" placeholder="Twój adres email" required="true">
+                    <input name="email" type="text" class="form-control" name="email" id="userEmail" placeholder="Twój adres email" required="true">
                   </fieldset>
                 </div>
               <div class="col-md-12">
                 <fieldset>
                   <textarea name="message" rows="6" class="form-control" name="message" id="message" placeholder="Miejsce na pytanie..." required="true"></textarea>
                 </fieldset>
+              </div>
+              <div class="col-md-12">
+                <div id="RecaptchaField2"></div>
               </div>
               <div class="col-md-12">
                 <fieldset>
@@ -379,7 +431,7 @@ https://templatemo.com/tm-557-grad-school
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
