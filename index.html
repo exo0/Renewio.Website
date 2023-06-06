@@ -37,7 +37,7 @@
       window.onload = function() {
           document.getElementById('partnerContact-form').addEventListener('submit', function(event) {
               event.preventDefault();
-              let captchaValue = grecaptcha.getResponse();
+              let captchaValue = grecaptcha.getResponse(0);
               console.log(captchaValue);
               console.log(this);
               let name = document.getElementById("name").value;
@@ -67,7 +67,7 @@
       window.onload = function() {
           document.getElementById('userContact-form').addEventListener('submit', function(event) {
               event.preventDefault();
-              let captchaValue = grecaptcha.getResponse();
+              let captchaValue = grecaptcha.getResponse(1);
               console.log(captchaValue);
               console.log(this);
               let name = document.getElementById("userName").value;
