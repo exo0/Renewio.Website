@@ -693,6 +693,11 @@ section.coming-soon .continer h4 em {
     font-size: 26px;
   }
 
+  .g-recaptcha {
+    transform:scale(0.77);
+    transform-origin:0 0;
+}
+
   section.coming-soon .continer .counter .days .value,
   section.coming-soon .continer .counter .hours .value,
   section.coming-soon .continer .counter .minutes .value,
@@ -1450,6 +1455,11 @@ img.mfp-img {
     text-align: center;
     padding: 0;
   }
+
+  .g-recaptcha {
+    transform:scale(0.77);
+    transform-origin:0 0;
+}
 }
 @media all and (max-width: 900px) {
   .mfp-arrow {
@@ -1497,6 +1507,10 @@ section.contact form {
   section.contact form {
       margin-bottom: 30px;
   }
+  .g-recaptcha {
+    transform:scale(0.77);
+    transform-origin:0 0;
+}
 }
 
 section.contact form input {
@@ -1594,7 +1608,76 @@ footer ul li {
 
 footer .list-unstyled{
   padding: 10px 0px;
+
 }
+
+
+/* FAQ */
+
+
+
+section.FAQ {
+  /* background-image: url(../images/Jak\ dzialamy_Klaudia6.png); */
+  background-color: #172238;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+section.FAQ h2{
+  color: #fff;
+}
+
+section.FAQ p{
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+section.FAQ .question{
+  margin-top: 20px;
+}
+		  
+			  
+					
+				  
+ 
+
+			  
+			  
+						
+				 
+ 
+
+					  
+					
+ 
+
+
+		 
+
+
+
+			 
+																	
+							
+						 
+				
+					 
+ 
+
+			   
+			  
+ 
+
+			  
+			  
+					 
+ 
+
+					  
+				   
+ 
+
 
 
 /* FAQ */
